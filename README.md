@@ -5,6 +5,7 @@ This project is a plugin for cordova/phonegap apps, and provides a replacement f
 ## Webview+ Features, Advantages and Benefits  ##
 
 * WebGL
+* Better support for CSS3
 * Faster JS (Nitro JS Virtual Machine)
 * Support for IndexedDB 
 * Crypto API
