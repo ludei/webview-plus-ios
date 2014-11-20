@@ -28,7 +28,7 @@ $ cocoonjs plugin add com.ludei.ios.webview.plus
 
 #### Manual installation  ####
 
-Refer to the hook located at ios/hooks/install.js for the steps needed to know what needs to be done to install the Webview+ automatically.
+Refer to the hook located at ios/hooks/install.js for the steps needed to install the Webview+ manually.
 
 ### About the author ###
 
