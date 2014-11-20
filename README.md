@@ -1,6 +1,6 @@
 # Webview+ for iOs #
 
-This project is a plugin for cordova/phonegap apps, and provides a **WKWebView, a replacement for UIWebView that includes the Nitro JS engine.**.
+This project is a plugin for cordova/phonegap apps, and provides a replacement for **the UIWebView that includes the Nitro JS engine based on the WKWebView**.
 
 ## Webview+ Features, Advantages and Benefits  ##
 
