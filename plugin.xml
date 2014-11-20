@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android" id="com.ludei.ios.webview.plus" version="1.0.0">
+
+	<name>Webview+</name>
+	<author>Ludei</author>
+
+    <!-- android -->
+    <platform name="ios">
+    	<framework src="QuartzCore.framework" />
+    	<framework src="CoreGraphics.framework" />
+    	<framework src="CoreText.framework" />
+    	<framework src="OpenGLES.framework" />
+    	<framework src="CoreMotion.framework" />
+    	<framework src="MobileCoreServices.framework" />
+    	<framework src="AssetsLibrary.framework" />
+    	<framework src="MapKit.framework" />
+    	<framework src="ImageIO.framework" />
+    	<framework src="CoreLocation.framework" />
+    	<framework src="libz.dylib" />
+    	<framework src="SystemConfiguration.framework" />
+    	<framework src="WebKit.framework" weak="true"/>
+    	<framework src="AudioToolbox.framework"/>
+    	<framework src="OpenAL.framework"/>
+
+        <source-file src="ios/Release-iphonesimulator/Release-iphonesimulator-libCocoonJS.a" />
+        <source-file src="ios/Release-iphonesimulator/Release-iphonesimulator-libCocoonJS_force_load.a" compiler-flags="-force_load" />
+        
+        <source-file src="ios/Release-iphoneos/Release-iphoneos-libCocoonJS.a" />
+        <source-file src="ios/Release-iphoneos/Release-iphoneos-libCocoonJS_force_load.a" compiler-flags="-force_load" />
+
+        <source-file src="ios/Resources/cocoonjs.cf" />
+
+    </platform>
+	
+</plugin>
