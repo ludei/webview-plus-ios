@@ -2,6 +2,8 @@
 
 This project is a plugin for cordova/phonegap apps, and provides a replacement for **the UIWebView that includes the Nitro JS engine based on the WKWebView**.
 
+Looking for [Webview+ for Android](https://github.com/ludei/webview-plus)?
+
 ## Webview+ Features, Advantages and Benefits  ##
 
 * WebGL
