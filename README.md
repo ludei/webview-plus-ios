@@ -28,9 +28,11 @@ $ sudo npm install -g cocoonjs
 $ cocoonjs create MyProject
 $ cd MyProject
 $ cocoonjs platform add ios
-$ cocoonjs plugin add com.ludei.ios.webview.plus
+$ cocoonjs plugin add com.ludei.ios.webview.plus -d
 $ cocoonjs run/emulate
 ```
+
+The `-d` flag is used to activate the verbose mode.
 
 #### Manual installation  ####
 
