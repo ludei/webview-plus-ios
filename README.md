@@ -22,8 +22,14 @@ Even though it's a cordova-compatible plugin, some steps must be done for the in
 Once the cocoonjs-cli is installed in your system, just type:
 
 ```
-$ cd /to/your/cordova/based/project
+// Install Ludei's CLI
+$ sudo npm install -g cocoonjs
+
+$ cocoonjs create MyProject
+$ cd MyProject
+$ cocoonjs platform add ios
 $ cocoonjs plugin add com.ludei.ios.webview.plus
+$ cocoonjs run/emulate
 ```
 
 #### Manual installation  ####
