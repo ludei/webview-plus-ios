@@ -12,7 +12,7 @@ Looking for [Webview+ for Android](https://github.com/ludei/webview-plus)?
 * Support for IndexedDB 
 * Crypto API
 * Navigation Timing API
-* CSS layering
+* HTML Template element
 * Fullscreen API
 
 #### How to install the Webview+ in your current project ####
