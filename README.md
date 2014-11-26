@@ -13,7 +13,6 @@ Looking for [Webview+ for Android](https://github.com/ludei/webview-plus)?
 * Crypto API
 * Navigation Timing API
 * HTML Template element
-* Fullscreen API
 
 #### How to install the Webview+ in your current project ####
 
