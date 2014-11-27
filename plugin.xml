@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android" id="com.ludei.ios.webview.plus" version="1.0.2">
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android" id="com.ludei.ios.webview.plus" version="1.0.3">
 
 	<name>Webview+</name>
 	<author>Ludei</author>
 
-    <!-- android -->
+	<engines>
+        <engine name="cordova" version="<=4.0.0" />
+    </engines>
+
     <platform name="ios">
     	<framework src="QuartzCore.framework" />
     	<framework src="CoreGraphics.framework" />

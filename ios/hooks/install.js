@@ -1,9 +1,19 @@
 var path = require('path');
 var fs 	= require('fs');
 
-function WebViewPlusInstaller(project_path) {
+function WebViewPlusInstaller(project_path, cmd) {
 	
 	try {
+    // Install this plugin only on Cordova <= 4.0.0
+    var version = cmd.exec("--version", { silent : true });
+
+    if(version.code !== 0){
+        console.error("Cannot install the Webview+ for iOs in your project because a valid cordova-cli binary wasn't found.");
+    }
+
+    if( parseFloat(version.output) > parseFloat('4.0.0') ){
+        throw new Error("This plugin should be installed in cordova 4.0.0 or below. Your cordova version is " + version.output);
+    }
 
     var platform_path = path.join(project_path, "platforms", "ios");
     var plugins_path = path.join(project_path, "plugins", "com.ludei.ios.webview.plus");
@@ -75,9 +85,10 @@ function WebViewPlusInstaller(project_path) {
     fs.writeFileSync(new_main, main_content, "utf8");
     fs.writeFileSync(pbxpath, pbx_content, "utf8");
 
+    console.log("Webview+ installed correctly in your CocoonJS project :)");
     }
     catch (e) {
-       console.error(e);
+       throw new Error(e);
     }
 }
 
