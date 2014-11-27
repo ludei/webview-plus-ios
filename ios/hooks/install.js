@@ -68,7 +68,9 @@ function WebViewPlusInstaller(project_path) {
     /**
     * Replace the main delegate
     */
-    main_content = main_content.replace("AppDelegate","CocoonJSAppDelegate");
+    var mainmmDelegate = 'float version = UIDevice.currentDevice.systemVersion.floatValue;\n int retVal = UIApplicationMain(argc, argv, nil, version >= 8.0 ? @"CocoonJSAppDelegate" : @"AppDelegate");';
+    var mainmmDelegatePattern = 'int retVal = UIApplicationMain(argc, argv, nil, @"AppDelegate");';
+    main_content = main_content.replace(mainmmDelegatePattern,mainmmDelegate);
     
     fs.writeFileSync(new_main, main_content, "utf8");
     fs.writeFileSync(pbxpath, pbx_content, "utf8");
