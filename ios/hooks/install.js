@@ -12,7 +12,7 @@ function WebViewPlusInstaller(project_path, cmd) {
     }
 
     if( parseFloat(version.output) > parseFloat('4.0.0') ){
-        throw new Error("This plugin should be installed in cordova 4.0.0 or below. Your cordova version is " + version.output);
+        throw new Error("This plugin should be installed using cordova 4.0.0 or below. Your cordova version is " + version.output);
     }
 
     var platform_path = path.join(project_path, "platforms", "ios");
