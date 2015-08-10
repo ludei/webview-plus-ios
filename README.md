@@ -1,3 +1,6 @@
+# IMPORTANT: This project has been discontinued. For the latest Webview+ for iOS, please go to the new Cocoon Cloud at http://cocoon.io. 
+The new Cocoon cloud is completely Cordova based and has enhanced features that include: the most up to date Webview+, new Cocoon plugins, a better Developer App, support for any Cordova plugin and a revamped UI.
+
 # Webview+ for iOs #
 
 This project is a plugin for cordova/phonegap apps, and provides a replacement for **the UIWebView that includes the Nitro JS engine based on the WKWebView**.
